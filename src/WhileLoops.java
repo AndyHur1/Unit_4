@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class WhileLoops {
     static Scanner scan =new Scanner(System.in);
     public static String fromHereToThere (int a, int b){
-        String output= " ";
+        String output= "";
         if (a>b) {
             return "Invalid input";
         }else
-            while(a<b){
-                ++a;
-            output+= a+" ";}
+            while(a<=b){
+
+            output+=a+" ";
+                ++a;}
+
         return output;
 
 
@@ -86,6 +88,7 @@ public class WhileLoops {
 
     }
     public static void main(String[] args){
+        System.out.println(fromHereToThere(10,10));
         System.out.println(factors(17));
     }
 }
