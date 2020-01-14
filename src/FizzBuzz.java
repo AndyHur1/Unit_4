@@ -3,9 +3,7 @@ public class FizzBuzz {
 
         String output = "";
         for (int a=1;a<=num;a++){
-            if (a%20==0&&a!=1){
-                output+="\n";
-            }
+
 
             if (a%3==0&&a%5!=0){
                 output+="Fizz ";
@@ -16,7 +14,9 @@ public class FizzBuzz {
             }else{
                 output+=a+" ";
             }
-
+            if (a%20==0){
+                output+="\n";
+            }
         }
         return output;
 
